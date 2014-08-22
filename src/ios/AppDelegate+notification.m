@@ -95,8 +95,8 @@ static char launchNotificationKey;
     // if the user clicked the notification check if the content-available flag is set, if so,
     //  we know that the callback has already been called  so we simple return
 
-    NSLog(@"%@". userInfo[@"aps"]);
-    
+    NSLog(@"%@", userInfo[@"aps"]);
+
     if (application.applicationState == UIApplicationStateInactive && userInfo[@"aps"][@"content-available"]) {
         return;
     }
