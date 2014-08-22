@@ -83,6 +83,7 @@ static char launchNotificationKey;
     if (appState == UIApplicationStateActive || appState == UIApplicationStateBackground) {
         pushHandler.notificationMessage = userInfo;
         pushHandler.isInline = YES;
+        NSLog(@"Executing fetch!!!!!");
         [pushHandler notificationReceived];
     } else {
         //save it for later
