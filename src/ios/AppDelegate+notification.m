@@ -97,7 +97,7 @@ static char launchNotificationKey;
 
     NSLog(@"%@", userInfo[@"aps"]);
 
-    if (application.applicationState == UIApplicationStateInactive && userInfo[@"aps"][@"content-available"]) {
+    if (application.applicationState == UIApplicationStateInactive && userInfo[@"aps"][@"content-available"] != nil) {
         return;
     }
 
