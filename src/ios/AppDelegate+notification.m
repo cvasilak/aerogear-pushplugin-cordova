@@ -70,7 +70,7 @@ static char launchNotificationKey;
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    NSLog("foobar");
+    NSLog(@"foobar");
     NSLog(@"didReceiveNotification");
 
     // Get application state for iOS4.x+ devices, otherwise assume active
