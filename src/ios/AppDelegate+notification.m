@@ -98,6 +98,8 @@ static char launchNotificationKey;
         return;
     }
 
+    NSLog(@"Executing Fetch!!!!");
+
     PushPlugin *pushHandler = [self getCommandInstance:@"PushPlugin"];
     [pushHandler backgroundFetch:completionHandler userInfo:userInfo];
 }
